@@ -7,7 +7,7 @@ if (document.getElementById("app")) {
                 recetas: [],
                 errored: false,
                 loading: true,
-                url: "http://localhost:5000/recetas"
+                url: "https://kenaluisa.pythonanywhere.com/recetas"
                 }
         },
         methods: {
@@ -23,7 +23,7 @@ if (document.getElementById("app")) {
                     })
             },
             eliminar(receta) {
-                const url = 'http://localhost:5000/recetas/' + receta;
+                const url = 'https://kenaluisa.pythonanywhere.com/recetas/' + receta;
                 var options = {
                     method: 'DELETE',
                 }

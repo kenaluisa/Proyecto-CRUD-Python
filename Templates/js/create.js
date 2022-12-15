@@ -9,7 +9,7 @@ function guardar() {
         imagen: p,
         descripcion: s
     }
-    let url = "http://localhost:5000/recetas"
+    let url = "https://kenaluisa.pythonanywhere.com/recetas"
     var options = {
         body: JSON.stringify(receta),
         method: 'POST',
